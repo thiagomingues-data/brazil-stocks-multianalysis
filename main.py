@@ -1,4 +1,4 @@
-# Brazilian Stock Market Multi-Asset Analysis
+# Multi-Asset Brazilian Stock Market Analysis (5 Assets)
 
 import yfinance as yf
 import pandas as pd
