@@ -47,21 +47,24 @@ print(summary)
 # 5. Moving averages function (reusable)
 # -----------------------------
 def plot_moving_average(df, ticker):
+
+    if ticker not in df.columns:
+        print(f"{ticker} não encontrado.")
+        return
+
     ma20 = df[ticker].rolling(20).mean()
     ma200 = df[ticker].rolling(200).mean()
 
     plt.figure(figsize=(12,5))
-    plt.plot(df[ticker], label=ticker, alpha=0.5)
-    plt.plot(ma20, label='MA20')
-    plt.plot(ma200, label='MA200')
-
-    plt.title(f"Moving Average Strategy - {ticker}")
+    plt.plot(df[ticker], label=ticker)
+    plt.plot(ma20, label="MA20")
+    plt.plot(ma200, label="MA200")
+    plt.title(f"Médias Móveis - {ticker}")
     plt.legend()
-    plt.grid()
+    plt.grid(alpha=0.3)
     plt.show()
-
 # -----------------------------
 # 6. Apply to all stocks
 # -----------------------------
 for i in tickers:
-    plot_moving_average(dados_estratégia, i)
+    plot_moving_average(data, i)
