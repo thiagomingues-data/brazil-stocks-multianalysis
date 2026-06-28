@@ -63,5 +63,5 @@ def plot_moving_average(df, ticker):
 # -----------------------------
 # 6. Apply to all stocks
 # -----------------------------
-for t in ['EGIE3.SA','ITSA4.SA','BBAS3.SA','PSSA3.SA']:
-    plot_moving_average(data, t)
+for i in tickers:
+    plot_moving_average(dados_estratégia, i)
