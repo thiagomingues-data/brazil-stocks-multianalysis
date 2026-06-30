@@ -4,7 +4,7 @@
 
 Este projeto realiza uma análise completa do mercado de ações brasileiro, utilizando múltiplos ativos e o índice IBOV.
 
-O objetivo é estudar comportamento de preços, retornos históricos e tendências de longo prazo.
+O objetivo é estudar o comportamento de preços, retornos históricos e tendências de longo prazo.
 
 ---
 
